@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>God's Blessing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <style>
+        body {
+        animation: zoomFade 1.5s ease;
+        }
+
+        @keyframes zoomFade {
+            from { transform: scale(0.95); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-sticky">
+        <div class='header'>
+            <div class="imagenes">
+                <img src="../imagenes/nombre.png" alt="nombre" width="200px"   class="nombre">
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                ☰
+            </button>
+            <nav class="opciones">
+                <a href="../index.html">Inicio</a>
+                <a href="categorias.html">Productos</a>
+                <a href="informacion.html">¿Quiénes somos?</a>
+                <a href="../index.html">Otros</a>
+            </nav>
+        </div>
+        <hr>
+    </div>
+    <div class="contenido">
+        <center><h1 class="tituloC">Categorías</h1></center>
+        <div class="categoriaProductos">
+            <div class="categoria2-grid">
+                <!-- Perfumería -->
+                <div class="categoria-card">
+                    <a href="perfumes.html"><img src="../imagenes/Moschino.jpg" alt="Perfumería Gods's Blessing"></a>
+                    <h3>Perfumería</h3>
+                    <p>Fragancias que reflejan tu esencia y estilo.</p>
+                    <a href="perfumes.html" class="btn">Ver más</a>
+                </div>
+
+                <!-- Aseo -->
+                <div class="categoria-card">
+                    <a href="aseo.html"><img src="../imagenes/aseo.png" alt="Productos de aseo"></a>
+                    <h3>Aseo</h3>
+                    <p>Soluciones de limpieza que cuidan tu entorno.</p>
+                    <a href="aseo.html" class="btn">Ver más</a>
+                </div>
+
+                <!-- Papelería -->
+                <div class="categoria-card">
+                    <a href="aseo.html"><img src="../imagenes/colores.jpg" alt="Papelería y organización"></a>
+                    <h3>Papelería</h3>
+                    <p>Organiza tu día con estilo y creatividad.</p>
+                    <a href="papeleria.html" class="btn">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+    <div id="footer-placeholder"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        /*
+        fetch('../header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('encabezado').innerHTML = data;
+
+                const toggle = document.querySelector('.menu-toggle');
+                const menu = document.querySelector('.opciones');
+
+                toggle.addEventListener('click', () => {
+                    menu.classList.toggle('activo');
+                });
+            });
+           
+
+        fetch('../footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });*/
+    </script>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h1><b>Contacto</b></h1>
+                    <p><p>Haz tus pedidos en <strong>God's Blessing</strong> y disfruta perfumes, aseo y papelería con el sello de calidad que nos distingue. Contáctanos ahora.</p></p>
+                    <h4>Dirección:</h4>
+                    <p>Dg. 26p 4 #93-24, Marroquin II, Cali, Valle del Cauca</p>
+                    <h4>Horario:</h4>
+                    <p>Lunes a sábado</p>
+                </div>
+                <div class="footer-right">
+                    <a href="https://maps.app.goo.gl/JG4KyELXmARhAn978" target="_blank">
+                        <img src="../imagenes/ubi.png" alt="Ubicación" width="500" height="300" style="border:0;">
+                    </a>
+                </div>
+            </div>
+        <center> <p class="marca">©2026 God's Blessing | Creado por HDY</p></center>
+    </footer>
+
+</body>
+</html>
