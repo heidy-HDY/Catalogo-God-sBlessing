@@ -783,11 +783,11 @@ footer {
 @media (max-width: 768px) {
 
   h1 {
-    font-size: 24px;
+    font-size: 39px;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 36px;
   }
 
   p {
@@ -823,6 +823,7 @@ footer {
 
   footer {
     padding: 20px 15px;
+  
   }
 
   .footer-container {
@@ -830,10 +831,13 @@ footer {
     gap: 15px;
   }
 
+  .footer-left h1{
+    font-size: 25px;
+  }
   .footer-left h2 {
     font-size: 22px;
   }
-
+  
   .footer-left p {
     font-size: 14px;
     line-height: 1.5;
@@ -854,12 +858,13 @@ footer {
 
    .footer-left,
   .footer-left p,
-  .footer-left h2 {
+  .footer-left h2{
     width: 100%;
     max-width: 100%;
     white-space: normal;
     overflow-wrap: break-word;
     word-break: break-word;
+    text-align: left;
   }
 
 }
