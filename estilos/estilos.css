@@ -783,11 +783,11 @@ footer {
 @media (max-width: 768px) {
 
   h1 {
-    font-size: 39px;
+    font-size: 36px;
   }
 
   h2 {
-    font-size: 36px;
+    font-size: 34px;
   }
 
   p {
@@ -801,6 +801,7 @@ footer {
   .footer-container {
     flex-direction: column;
     text-align: center;
+    
   }
 
   .footer-right {
@@ -849,6 +850,7 @@ footer {
 
   iframe {
     height: 200px;
+    margin-right: 25px;
   }
 
   .footer-bottom {
@@ -865,6 +867,7 @@ footer {
     overflow-wrap: break-word;
     word-break: break-word;
     text-align: left;
+    margin-right: 25px;
   }
 
 }
