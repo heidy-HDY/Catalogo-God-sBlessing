@@ -33,31 +33,31 @@
                     <img src="../imagenes/aseo/ambientadores.png" alt="AMBIENTADORES">
                     <h3>AMBIENTADORES</h3>
                     <p class="disponibleP">Variantes disponibles:<br></p>
-                    <a href="https://wa.me/573135552976" target="_blank" class="cotizar">Cotizar</a>
+                    <a href="#"  class="cotizar">Cotizar</a>
                 </div>
                 <div class="card-perfume">
                     <img src="../imagenes/aseo/desengrasante.png" alt="DESENGRASANTE">
                     <h3>DESENGRASANTE</h3>
                     <p class="disponibleP">Variantes disponibles:<br></p>
-                    <a href="https://wa.me/573135552976" target="_blank" class="cotizar">Cotizar</a>
+                    <a href="#"  class="cotizar">Cotizar</a>
                 </div>
                 <div class="card-perfume">
                     <img src="../imagenes/aseo/detergenteLiquido.png" alt="DETERGENTE LIQUIDO">
                     <h3>DETERGENTE LIQUIDO</h3>
                     <p class="disponibleP">Variantes disponibles:<br></p>
-                    <a href="https://wa.me/573135552976" target="_blank" class="cotizar">Cotizar</a>
+                    <a href="#" class="cotizar">Cotizar</a>
                 </div>
                 <div class="card-perfume">
                     <img src="../imagenes/aseo/jabonL.png" alt="JABON LIQUIDO">
                     <h3>JABON LIQUIDO</h3>
                     <p class="disponibleP">Variantes disponibles:<br></p>
-                    <a href="https://wa.me/573135552976" target="_blank" class="cotizar">Cotizar</a>
+                    <a href="#"  class="cotizar">Cotizar</a>
                 </div>
                 <div class="card-perfume">
                     <img src="../imagenes/lociones/adrenaline.jpg" alt="ADRENALINE NIGHT">
                     <h3>ADRENALINE NIGHT</h3>
                     <p class="disponibleP">Variantes disponibles:<br></p>
-                    <a href="https://wa.me/573135552976" target="_blank" class="cotizar">Cotizar</a>
+                    <a href="#"  class="cotizar">Cotizar</a>
                 </div>
 
             </div>
@@ -80,7 +80,7 @@
                         <h1><b>Contacto</b></h1>
                         <p><p>Haz tus pedidos en <strong>God's Blessing</strong> y disfruta perfumes, aseo y papelería con el sello de calidad que nos distingue. Contáctanos ahora.</p></p>
                         <h4>Dirección:</h4>
-                        <p>Dg. 26p 4 #93-24, Marroquin II, Cali, Valle del Cauca</p>
+                        <p>Dg. 26p 4 #93-18, Marroquin II, Cali, Valle del Cauca</p>
                         <h4>Horario:</h4>
                         <p>Lunes a sábado</p>
                     </div>
@@ -103,6 +103,27 @@
 
             document.querySelectorAll("img").forEach(img => {
                 img.setAttribute("loading", "lazy");
+            });
+
+            document.addEventListener("DOMContentLoaded", function() {
+
+                const numero = "573135552976";
+                document.querySelectorAll(".card-perfume").forEach(card => {
+
+                    const nombreProducto = card.querySelector("h3").innerText;
+                    const boton = card.querySelector(".cotizar");
+
+                    boton.addEventListener("click", function(e) {
+                        e.preventDefault();
+
+                        const mensaje = `Hola, quiero cotizar el producto de aseo ${nombreProducto}. ¿Está disponible?`;
+
+                        const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+                        window.open(url, "_blank");
+                    });
+
+                });
+
             });
 
     </script>

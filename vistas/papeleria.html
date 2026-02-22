@@ -33,62 +33,62 @@
                     <img src="../imagenes/utiles/cuadernosH.png" alt="CUADERNOS NIÑO">
                     <h3>CUADERNOS NIÑO</h3>
                     <p class="disponibleP">Variantes disponibles:<br>Cuadriculado-Linea corriente</p>
-                    <a href="https://wa.me/573135552976" target="_blank" class="cotizar">Cotizar</a>
+                    <a href="#"  class="cotizar">Cotizar</a>
                 </div>
                 <div class="card-perfume">
                     <img src="../imagenes/utiles/cuadernosN.png" alt="CUADERNOS NIÑA">
                     <h3>CUADERNOS NIÑA</h3>
                     <p class="disponibleP">Variantes disponibles:<br>Cuadriculado-Linea corriente</p>
-                    <a href="https://wa.me/573135552976" target="_blank" class="cotizar">Cotizar</a>
+                    <a href="#"  class="cotizar">Cotizar</a>
                 </div>
                 <div class="card-perfume">
                     <img src="../imagenes/utiles/borradores.png" alt="BORRADORES">
                     <h3>BORRADORES</h3>
                     <p class="disponibleP">Variantes disponibles:<br></p>
-                    <a href="https://wa.me/573135552976" target="_blank" class="cotizar">Cotizar</a>
+                    <a href="#"  class="cotizar">Cotizar</a>
                 </div>
                 <div class="card-perfume">
                     <img src="../imagenes/utiles/caja de lapiceros.png" alt="CAJA DE LAPICEROS">
                     <h3>CAJA DE LAPICEROS</h3>
                     <p class="disponibleP">Variantes disponibles:<br>Unidad</p>
-                    <a href="https://wa.me/573135552976" target="_blank" class="cotizar">Cotizar</a>
+                    <a href="#"  class="cotizar">Cotizar</a>
                 </div>
                 <div class="card-perfume">
                     <img src="../imagenes/utiles/correctores.png" alt="CAJA DE CORRECTORES">
                     <h3>CAJA DE CORRECTORES</h3>
                     <p class="disponibleP">Variantes disponibles:<br></p>
-                    <a href="https://wa.me/573135552976" target="_blank" class="cotizar">Cotizar</a>
+                    <a href="#"  class="cotizar">Cotizar</a>
                 </div>
 
                 <div class="card-perfume">
                     <img src="../imagenes/utiles/egas.jpg" alt="EGA">
                     <h3>EGA</h3>
                     <p class="disponibleP">Variantes disponibles:<br>Liquida/Embarra</p>
-                    <a href="https://wa.me/573135552976" target="_blank" class="cotizar">Cotizar</a>
+                    <a href="#"  class="cotizar">Cotizar</a>
                 </div>
                 <div class="card-perfume">
                     <img src="../imagenes/utiles/grapadora.png" alt="GRAPADORA">
                     <h3>GRAPADORA</h3>
                     <p class="disponibleP">Variantes disponibles:<br>Presentación unica disponible</p>
-                    <a href="https://wa.me/573135552976" target="_blank" class="cotizar">Cotizar</a>
+                    <a href="#"  class="cotizar">Cotizar</a>
                 </div>
                 <div class="card-perfume">
                     <img src="../imagenes/utiles/marcadores.png" alt="marcadores">
                     <h3>MARCADORES</h3>
                     <p class="disponibleP">Variantes disponibles:<br>Unidad/Caja</p>
-                    <a href="https://wa.me/573135552976" target="_blank" class="cotizar">Cotizar</a>
+                    <a href="#"  class="cotizar">Cotizar</a>
                 </div>
                 <div class="card-perfume">
                     <img src="../imagenes/utiles/resma.png" alt="RESMA PAPEL CARTA">
                     <h3>RESMA PAPEL CARTA</h3>
                     <p class="disponibleP">Variantes disponibles:<br>Resma papel oficio</p>
-                    <a href="https://wa.me/573135552976" target="_blank" class="cotizar">Cotizar</a>
+                    <a href="#"  class="cotizar">Cotizar</a>
                 </div>
                 <div class="card-perfume">
                     <img src="../imagenes/utiles/temperas.jpg" alt="TEMPERAS">
                     <h3>TEMPERAS</h3>
                     <p class="disponibleP">Variantes disponibles:<br>Unica Presentación Disponible</p>
-                    <a href="https://wa.me/573135552976" target="_blank" class="cotizar">Cotizar</a>
+                    <a href="#"  class="cotizar">Cotizar</a>
                 </div>
 
             </div>
@@ -104,12 +104,12 @@
                         <h1><b>Contacto</b></h1>
                         <p><p>Haz tus pedidos en <strong>God's Blessing</strong> y disfruta perfumes, aseo y papelería con el sello de calidad que nos distingue. Contáctanos ahora.</p></p>
                         <h4>Dirección:</h4>
-                        <p>Dg. 26p 4 #93-24, Marroquin II, Cali, Valle del Cauca</p>
+                        <p>Dg. 26p 4 #93-18, Marroquin II, Cali, Valle del Cauca</p>
                         <h4>Horario:</h4>
                         <p>Lunes a sábado</p>
                     </div>
                     <div class="footer-right">
-                        <a href="https://maps.app.goo.gl/JG4KyELXmARhAn978" target="_blank">
+                        <a href="https://maps.app.goo.gl/JG4KyELXmARhAn978" >
                             <img src="../imagenes/ubi.png" alt="Ubicación" width="500" height="300" style="border:0;">
                         </a>
                     </div>
@@ -128,6 +128,27 @@
 
             document.querySelectorAll("img").forEach(img => {
                 img.setAttribute("loading", "lazy");
+            });
+
+            document.addEventListener("DOMContentLoaded", function() {
+
+                const numero = "573135552976";
+                document.querySelectorAll(".card-perfume").forEach(card => {
+
+                    const nombreProducto = card.querySelector("h3").innerText;
+                    const boton = card.querySelector(".cotizar");
+
+                    boton.addEventListener("click", function(e) {
+                        e.preventDefault();
+
+                        const mensaje = `Hola, quiero cotizar el producto: ${nombreProducto}. ¿Está disponible?`;
+
+                        const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+                        window.open(url, "_blank");
+                    });
+
+                });
+
             });
     </script>
 
