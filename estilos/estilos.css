@@ -518,6 +518,35 @@ footer {
 
 }
 
+.quienes-somos {
+    background: linear-gradient(135deg, #f8f8f8, #ffffff);
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    max-width: 800px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.quienes-somos h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #d4af37; /* Dorado elegante */
+}
+
+.quienes-somos p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
 
 /* =========================
    MEJORAS RESPONSIVE (SIN ROMPER DISEÑO)
